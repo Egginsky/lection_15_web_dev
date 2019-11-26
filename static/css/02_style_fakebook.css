@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(4, 217, 255);
+}
+
+::selection {
+  color: gold;
+  background-color: red;
+}
+
+#bild {
+    border: rgb(57, 255, 20) 5px solid;
+}
+#bild:hover {
+    border: rgb(255, 131, 0) 10px double;
+}
+
+#knopf {
+    border: rgb(87, 255, 20) 5px solid;
+    transition: border-width 0.3s linear;
+}
+#knopf:hover {
+   border: rgb(127, 0, 255) solid;
+   border-width: 10px;
+}
+
+.überschrift {
+    text-decoration: underline;
+}
+
+ .schrift {
+  font-family: sans-serif;
+ }
+
+.hintergrund {
+  width: 350px;
+  height: 60px;
+  border: rgb(127, 0, 255) solid 3px;
+}
+
+/* Unterschrichen, Liste einrahmen, Überschrift hinterlegen, statt rahmen, schatten hover
+
+
+.border-button:hover { outline-width: 10px; }*/

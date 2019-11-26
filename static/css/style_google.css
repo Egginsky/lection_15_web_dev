@@ -1,0 +1,22 @@
+.zentriert {
+    text-align: center;
+}
+
+.relative1 {
+    position: relative;
+    top: 40px;
+}
+
+.relative2 {
+    position: relative;
+    top: 50px;
+}
+
+.google {
+    font-size: 70px;
+    color: green;
+}
+
+#margin-top {
+    margin-top: 150px;
+}

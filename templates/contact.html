@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+About what?
+
+<form>
+    <input type="text" name="name">
+    <input type="submit">
+</form>
+
+<p>
+  Dein Name ist: <h3>{{name}}</h3>
+    {{ request.args.get("name") }}
+</p>
+
+{% endblock body %}

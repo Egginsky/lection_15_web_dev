@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello you little Ninja</title>
-    <link rel="stylesheet" href="/static/css/style.css"/>
-</head>
-<body>
-    <h1>Welcome back to HTML</h1>
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Welcome back to HTML, {{ request.cookies.get("name") }}!</h1>
     Welcome to my very first page!
     <p>
-        You are the
-{{ zaehler }} visitor
+        You are the {{ zaehler }} visitor
     </p>
     <p>
-        <a href="/about_me">About_me</a> <br>
+        <a href="/about_me">About me</a> <br>
         <a href="/portfolio">Portfolio</a>
     </p>
-</body>
-</html>
+
+
+{% endblock body %}
